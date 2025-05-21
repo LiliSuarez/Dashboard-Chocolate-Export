@@ -6,7 +6,6 @@ clientes_url = "https://raw.githubusercontent.com/LiliSuarez/Dashboard-Chocolate
 mercados_url = "https://raw.githubusercontent.com/LiliSuarez/Dashboard-ChocolateExport/main/mercados.csv"
 exportaciones_url = "https://raw.githubusercontent.com/LiliSuarez/Dashboard-ChocolateExport/main/exportaciones.csv"
 barreras_url = "https://raw.githubusercontent.com/LiliSuarez/Dashboard-ChocolateExport/main/barreras.csv"
-
 clientes = pd.read_csv(clientes_url)
 mercados = pd.read_csv(mercados_url)
 exportaciones = pd.read_csv(exportaciones_url)
