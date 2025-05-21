@@ -3,10 +3,10 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 # URLs de los archivos CSV
-clientes_url = "https://raw.githubusercontent.com/TU_USUARIO/Dashboard-ChocolateExport/main/clientes.csv"
-mercados_url = "https://raw.githubusercontent.com/TU_USUARIO/DashboardChocolate-Export/main/mercados.csv"
-exportaciones_url = "https://raw.githubusercontent.com/TU_USUARIO/DashboardChocolate-Export/main/exportaciones.csv"
-barreras_url = "https://raw.githubusercontent.com/TU_USUARIO/Dashboard-ChocolateExport/main/barreras.csv"
+clientes_url = "https://raw.githubusercontent.com/LiliSuarez/Dashboard-ChocolateExport/main/clientes.csv"
+mercados_url = "https://raw.githubusercontent.com/LiliSuarez/DashboardChocolate-Export/main/mercados.csv"
+exportaciones_url = "https://raw.githubusercontent.com/LiliSuarez/DashboardChocolate-Export/main/exportaciones.csv"
+barreras_url = "https://raw.githubusercontent.com/LiliSuarez/Dashboard-ChocolateExport/main/barreras.csv"
 clientes = pd.read_csv(clientes_url)
 mercados = pd.read_csv(mercados_url)
 exportaciones = pd.read_csv(exportaciones_url)
