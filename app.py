@@ -6,7 +6,7 @@ clientes_url = "https://raw.githubusercontent.com/LiliSuarez/Dashboard-Chocolate
 mercados_url = "https://raw.githubusercontent.com/LiliSuarez/Dashboard-ChocolateExport/main/tamaño_mercados.csv"
 exportaciones_url = "https://raw.githubusercontent.com/LiliSuarez/Dashboard-ChocolateExport/main/exportaciones.csv"
 barreras_url = "https://raw.githubusercontent.com/LiliSuarez/Dashboard-ChocolateExport/main/barreras_entrada.csv"
-clientes = pd.read_csv(clientes_url)
+posibles_clientes = pd.read_csv(clientes_url)
 mercados = pd.read_csv(mercados_url)
 exportaciones = pd.read_csv(exportaciones_url)
 barreras = pd.read_csv(barreras_url)
@@ -17,7 +17,7 @@ paises = exportaciones["País"].unique()
 pais_seleccionado = st.selectbox("Selecciona un país para ver los detalles", paises)
 # Mostrar datos de clientes
 st.subheader(" Clientes")
-clientes_filtrados = clientes[clientes["País"] == pais_seleccionado]
+clientes_filtrados = posibles_clientes[posibles_clientes["País"] == pais_seleccionado]
 st.dataframe(clientes_filtrados)
 # Mostrar datos de exportaciones
 st.subheader(" Exportaciones de Chocolates")
