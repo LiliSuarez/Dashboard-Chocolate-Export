@@ -1,14 +1,13 @@
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
-import seaborn as sns
 
 st.set_page_config(page_title='Dashboard-Chocolate-Export', layout='wide')
 
 # Cargar los datos desde archivos CSV en GitHub
 @st.cache_data
 def load_data():
-    base_url = 'https://raw.githubusercontent.com/LiliSuarez/Dashboard-Chocolate-Export-/main/'
+    base_url = 'https://raw.githubusercontent.com/LiliSuarez/Dashboard-Chocolate-Export/main/'
     clientes_df = pd.read_csv(base_url + 'clientes.csv')
     mercados_df = pd.read_csv(base_url + 'mercados.csv')
     exportaciones_df = pd.read_csv(base_url + 'exportaciones.csv')
